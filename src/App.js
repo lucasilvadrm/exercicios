@@ -1,6 +1,11 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
-import Botao from './components/Botao';
+import ContadorV2 from './components/contador/ContadorV2';
+
+// import Pai from './components/indireta/Pai';
+// import Pai from './components/direta/Pai';
+// import Contador from './components/Contador';
+// import Botao from './components/Botao';
 // import MinMax from './components/MinMax';
 // import RandomNumber from './components/RandomNumber';
 // import Comp, { Comp1, Comp2 } from './components/Multi';
@@ -9,8 +14,12 @@ import Botao from './components/Botao';
 const App = () => {
   return (
     <View style={style.App}>
-      <Botao />
+      <ContadorV2 />
       {/* <Comp />
+      <Pai />
+      <Pai />
+      <Contador initialValue={0} />
+      <Botao />
       <MinMax min={3} max={20} />
       <RandomNumber min={1} max={10} />
       <Comp1 />
