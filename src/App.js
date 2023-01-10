@@ -1,16 +1,18 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
-import MinMax from './components/MinMax';
-import RandomNumber from './components/RandomNumber';
+import Botao from './components/Botao';
+// import MinMax from './components/MinMax';
+// import RandomNumber from './components/RandomNumber';
 // import Comp, { Comp1, Comp2 } from './components/Multi';
 // import Primeiro from './components/Primeiro';
 
 const App = () => {
   return (
     <View style={style.App}>
+      <Botao />
+      {/* <Comp />
       <MinMax min={3} max={20} />
       <RandomNumber min={1} max={10} />
-      {/* <Comp />
       <Comp1 />
       <Comp2 />
       <Primeiro /> */}
