@@ -1,16 +1,12 @@
 import React from 'react';
-import { Text, View, Button } from 'react-native';
+import { Text, View } from 'react-native';
+import Style from './style';
 
-const RandomNumber = props => {
-  const random = Math.floor(Math.random() * +props.max + +props.min);
+const RandomNumber = ({ min, max }) => {
+  const random = Math.floor(Math.random() * +max + +min);
   return (
     <View>
-      <Text>{random}</Text>
-      <Button
-        title="Gerar novo número aleatório"
-        disabled
-        onPress={() => console.warn(random)}
-      />
+      <Text style={Style.txtLarge}>O número aleatório é: {random}</Text>
     </View>
   );
 };
