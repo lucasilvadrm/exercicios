@@ -1,7 +1,10 @@
 import React from 'react';
-import { View, StyleSheet } from 'react-native';
-import ContadorV2 from './components/contador/ContadorV2';
+import { StyleSheet, SafeAreaView } from 'react-native';
+import Familia from './components/relacao/Familia';
+import Membro from './components/relacao/Membro';
 
+// import Diferenciar from './components/Diferenciar';
+// import ContadorV2 from './components/contador/ContadorV2';
 // import Pai from './components/indireta/Pai';
 // import Pai from './components/direta/Pai';
 // import Contador from './components/Contador';
@@ -13,19 +16,29 @@ import ContadorV2 from './components/contador/ContadorV2';
 
 const App = () => {
   return (
-    <View style={style.App}>
+    <SafeAreaView style={style.App}>
+      <Familia>
+        <Membro nome={'Lucas'} sobrenome={'Silva'} />
+        <Membro nome={'Vítor'} sobrenome={'Silva'} />
+      </Familia>
+      <Familia>
+        <Membro nome={'Patrícia'} sobrenome={'Silva'} />
+        <Membro nome={'Jair'} sobrenome={'Silva'} />
+      </Familia>
+      {/*
+      <Diferenciar />
       <ContadorV2 />
-      {/* <Comp />
       <Pai />
       <Pai />
       <Contador initialValue={0} />
       <Botao />
       <MinMax min={3} max={20} />
       <RandomNumber min={1} max={10} />
+      <Comp />
       <Comp1 />
       <Comp2 />
       <Primeiro /> */}
-    </View>
+    </SafeAreaView>
   );
 };
 
